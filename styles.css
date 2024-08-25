@@ -1,0 +1,232 @@
+@import url('<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">');
+
+:root{
+    --color-primario: #d0ee2a;
+    --color-secundario: #ffffff;
+    --color-terciario: #000000;
+    --color-cuaternario: #bb5ae2;
+    --color-quiniario: #556B2F;
+    
+
+    --font-inter: 'Inter', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-inter);
+    font-weight: 400;
+    line-height: 150%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-terciario);
+    min-height: 100vh;
+    margin-top: 40px;
+}
+
+.logo__alura{
+    padding: 0 5%;
+    margin-top: 2%;
+}
+
+main {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+}
+
+.entrada-encriptador{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 650px;
+    gap: 16px;
+}
+
+.texto__encriptador {
+    width: 100%;
+    height: 500px;
+    margin-top: 60px;
+    font-size: 32px;
+    color: var(--color-primario);
+    background-color: transparent;
+    text-transform: lowercase;
+    border: none;
+}
+
+.texto__encriptador::placeholder{color: var(--color-primario);}
+    .texto__encriptador:focus {
+        outline: none;
+}
+
+.botones {
+    display:flex;
+    gap: 24px;
+    width: 100%;
+}
+
+.boton__encriptar{
+    background-color: var(--color-primario);
+    border: 1px solid var(--color-primario);
+    border-radius: 24px;
+    font-size: 16px;
+    color: var(--color-cuaternario);
+    cursor: pointer;
+    height: 67px;
+    max-width: 326px;
+    width: 100%;
+}
+
+.boton__desencriptar{
+    background-color: var(--color-quiniario);
+    border: 1px solid var(--color-primario);
+    border-radius: 24px;
+    font-size: 16px;
+    color: var(--color-primario);   
+    height: 67px;
+    max-width: 326px;
+    width: 100%;
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    background-color: var(--color-cuaternario);
+    border-radius: 24px;
+    padding: 32px;
+    height: 650px;
+}
+
+.mensaje__de-encriptado {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    height: 100%;
+}
+
+.mensaje__anuncio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.mensaje__anuncio p:first-of-type{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.mensaje__encriptador {
+    height: 80%;
+    border: none;
+    font-size: 32px;
+    color: var(--color-primario);
+}
+
+.mensaje__encriptador:focus {
+    outline: none;
+}
+
+.boton__copiar-mensaje {
+    border: 1px solid var(--color-primario);
+    border-radius: 24px;
+    font-size: 16px;
+    color: var(--color-primario);
+    margin-top: auto;
+    cursor: pointer;
+    height: 67px;
+    width: 200px;
+}
+
+.reglas {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--color-secundario);
+}
+
+.footer {
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-primario);
+    font-size: 14px;
+    color: var(--color-terciario);
+}
+
+@media (width <=1350px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 30px;
+    }
+    .header {
+        width: 100%;
+    }
+
+    .entrada-encriptador {
+        width: 100%;
+    }
+
+    .mensaje {
+        height: auto;
+        margin-bottom: 24px;
+    }
+
+    .mensaje__anuncio img{
+        display: none;
+    } 
+}
+
+@media (width <=714px) {
+
+    .entrada-encriptador {
+       width: 90%;
+    }
+
+    .texto__encriptador {
+        height: 220px;
+        margin-top: 0;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mensaje {
+        width: 90%;
+    }
+}
+
+.box {
+    background-image: url(fotos/satoru3.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+

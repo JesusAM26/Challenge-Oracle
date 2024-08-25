@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto de Jesus AM</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(fotos/satoru3.jfif);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="header">
+            <img src="fotos/vector-alura.png" class="logo__alura" alt="logo de Alura Latam">
+        </section>
+
+        <section class="entrada-encriptador">
+            <textarea name="texto__encriptador" class="texto__encriptador"
+                placeholder="Ingresa el texto aquí."></textarea>
+            <div class="reglas">
+                <img src="fotos/vector-exclamacion.png" alt="signo de exclamacion">
+                <p>OJO: Solo puedes utilizar letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="botones">
+                <button class="boton__encriptar" type="button" onclick="botonEncriptar()">
+                    Encriptar
+                </button>
+                <button class="boton__desencriptar" type="button" onclick="botonDesencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+        <section class="mensaje">
+            <div class="mensaje__anuncio">
+                <img src="fotos/muñeco.png" alt="muñeco con lupa">
+                <p>Ningun mensaje fue encontrado</p>
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <div class="mensaje__de-encriptado">
+                <textarea name="mensaje__encriptador" class="mensaje__encriptador"></textarea>
+                <button class="boton__copiar-mensaje" type="button" onclick="copiarMensaje()">
+                    Copiar
+                </button>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p>
+            Desarrollado por Jesus Aguirre Morales con Alura Latam.
+        </p>
+    </footer>
+</body>
+
+<script src="app.js">
+
+</script>
+
+</html>
